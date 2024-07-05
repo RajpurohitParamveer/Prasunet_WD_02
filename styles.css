@@ -1,0 +1,82 @@
+/* Apply a gradient background and center content using Flexbox */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+/* Container to center content vertically and horizontally */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Stopwatch styling */
+.stopwatch {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow for a premium look */
+}
+
+/* Title styling */
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+/* Display area styling */
+#display {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Button container styling */
+.buttons {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+/* Base button styling */
+button {
+    font-size: 18px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Start/Stop button styling */
+#startStopBtn {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+/* Hover effect for Start/Stop button */
+#startStopBtn:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Reset button styling */
+#resetBtn {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Hover effect for Reset button */
+#resetBtn:hover {
+    background-color: #e41d1d;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
